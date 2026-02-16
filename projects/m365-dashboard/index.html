@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M365 Environment Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pO4rN2g+vJn/9xhAlx0v+0/R9u2aM4BkRbE74Nnm+Xk/5VYOlTLiJ2+X85b/YM3jODR4Wqmc8r+zQl8e3r1C0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light">
+
+  <!-- HEADER -->
+  <header class="compact-header blue-bg">
+    <div class="header-left">
+      <h1>M365 Environment Dashboard</h1>
+      <div class="header-info">
+        <div id="lastSync">Last Sync: --</div>
+        <div id="location">Location: --</div>
+        <div id="health">Health: Good ✔</div>
+      </div>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+  </header>
+
+  <!-- DASHBOARD GRID -->
+  <main class="grid">
+    <div class="card grey clickable" id="tenant"></div>
+    <div class="card blue clickable" id="users"></div>
+    <div class="card green clickable" id="licenses"></div>
+    <div class="card orange clickable" id="security"></div>
+    <div class="card red clickable" id="conditionalAccess"></div>
+    <div class="card grey clickable" id="services"></div>
+    <div class="card orange clickable" id="vulnerabilities"></div>
+    <div class="card red clickable" id="riskRegister"></div>
+    <div class="card blue clickable" id="patching"></div>
+    <div class="card green clickable" id="mailflow"></div>
+    <div class="card purple clickable" id="deviceCompliance"></div>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modalClose" class="modal-close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
