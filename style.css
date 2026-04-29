@@ -98,7 +98,7 @@ body.dark {
 /* PROFILE PIC WITH SHIMMER */
 .profile-pic {
   position: absolute;
-  bottom: -40px;
+  bottom: -20px;
   left: 32px;
   width: 90px;
   height: 90px;
