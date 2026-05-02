@@ -180,7 +180,7 @@ body::before {
    ============================================================ */
 .profile-pic-wrap {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 6%;
   z-index: 20;
 }
