@@ -6,279 +6,95 @@
   <title>Tebogo Masokameng | IT Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="light">
+<body>
 
-  <!-- HEADER / BANNER -->
+  <!-- BANNER -->
   <header class="banner">
     <div class="banner-overlay">
       <div class="banner-content">
-        <div class="banner-text">
-          <h1 class="animate-slide">Tebogo Masokameng</h1>
-          <span class="animate-slide delay">Remote and Onsite IT Support • M365 • ASP.Net MVC</span>
-        </div>
+        <span class="banner-label">IT Portfolio</span>
+        <h1>Tebogo Masokameng</h1>
+        <p class="banner-subtitle">Remote &amp; Onsite IT Support &nbsp;·&nbsp; M365 &nbsp;·&nbsp; ASP.Net MVC</p>
       </div>
 
-      <button id="themeToggle" class="theme-toggle">🌙</button>
+      <!-- Theme Toggle -->
+      <div class="toggle-wrap">
+        <span class="toggle-label">Light</span>
+        <label class="theme-switch" aria-label="Toggle light mode">
+          <input type="checkbox" id="themeToggle" />
+          <span class="switch-track"></span>
+          <span class="switch-thumb"></span>
+        </label>
+      </div>
+    </div>
 
-      <!-- Profile Pic -->
-      <img src="assets/profile.jpg" alt="Profile" class="profile-pic" />
+    <!-- Profile Picture -->
+    <div class="profile-pic-wrap">
+      <img src="assets/images/profile.jpg" alt="Tebogo Masokameng" class="profile-pic" />
     </div>
   </header>
 
   <!-- NAVIGATION -->
   <nav class="main-nav">
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#job-profile">Job Profile</a></li>
-      <li><a href="#cv">Curriculum Vitae</a></li>
-    </ul>
+    <div class="nav-inner">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Job Profile.html">Job Profile</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Curriculum Vitae.html">Curriculum Vitae</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- MAIN -->
   <main>
 
-    <!-- ===================== PROJECTS SECTION ===================== -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p class="section-intro">A collection of web development and IT projects I've built.</p>
-
-      <!-- Subsection: Dashboards -->
-      <div class="subsection">
-        <h3>Dashboards & Tools</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>M365 Environment Dashboard</h4>
-            <p>Microsoft 365 dashboard with licensing, security, vulnerabilities, compliance, and charts.</p>
-            <div class="card-links">
-              <a href="projects/m365-dashboard/index.html" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
+    <!-- About -->
+    <section class="section">
+      <div class="section-header">
+        <h2>About</h2>
+        <div class="section-line"></div>
       </div>
+      <p class="section-intro">Welcome to my portfolio.</p>
 
-      <!-- Subsection: Education Websites -->
-      <div class="subsection">
-        <h3>Education & Childcare Websites</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Disney Academy</h4>
-            <p>Website for a local crèche in Pretoria Soshanguve.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/Disney-Academy/)" target="_blank">Explore</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h4>Polka-Dots Daycare & Aftercare</h4>
-            <p>Website for a local crèche in Pretoria North.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/Polka-Dots/)" target="_blank">Explore</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h4>Bluey's Friends Club</h4>
-            <p>Website for a well-loved pre-school in The Orchards, Pretoria.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/Blueys-Friends-Club/)" target="_blank">Explore</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h4>Brilliant Stars Pre-School</h4>
-            <p>Website for a really good pre-school in Hammanskraal.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/Brilliant-Stars/)" target="_blank">Explore</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Subsection: Business Websites -->
-      <div class="subsection">
-        <h3>Business Websites</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Merc Doctor City</h4>
-            <p>Site for service and repairs exclusively for Mercedes Benz vehicles.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/Merc-Doctor-City/)" target="_blank">Explore</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h4>LRC Enterprise</h4>
-            <p>Website for an enterprise that runs any errand for its clients.</p>
-            <div class="card-links">
-              <a href="[tmas87.github.io](https://tmas87.github.io/LRC-Enterprise/)" target="_blank">Explore</a>
-            </div>
-          </div>
+      <div class="about-card fade-in">
+        <p>
+          Remote and Onsite Support Technician with real-world experience in Microsoft 365,
+          endpoint management, security basics, troubleshooting, and building internal dashboards
+          for visibility and decision-making. Passionate about clean systems, efficient workflows,
+          and practical technology solutions.
+        </p>
+        <div class="about-links">
+          <a href="Job Profile.html" class="btn btn-primary">View Job Profile</a>
+          <a href="Projects.html" class="btn btn-secondary">See Projects</a>
         </div>
       </div>
     </section>
 
-    <!-- ===================== JOB PROFILE SECTION ===================== -->
-    <section id="job-profile" class="section">
-      <h2>Job Profile</h2>
-      <p class="section-intro">My professional background, experience, and qualifications.</p>
-
-      <!-- Subsection: About Me -->
-      <div class="subsection">
-        <h3>About Me</h3>
-        <div class="card">
-          <p>
-            Remote and Onsite Support Technician with real-world experience in Microsoft 365,
-            endpoint management, security basics, troubleshooting, and building internal dashboards 
-            for visibility and decision-making.
-          </p>
-        </div>
+    <!-- Quick Navigation -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Explore</h2>
+        <div class="section-line"></div>
       </div>
+      <p class="section-intro">Navigate to any section of the portfolio.</p>
 
-      <!-- Subsection: Work History -->
-      <div class="subsection">
-        <h3>Work History</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>IT Support Technician</h4>
-              <span class="meta">Executive Solutions • 2025 – Present</span>
-              <p>Providing remote and onsite support, managing M365 environments, troubleshooting hardware/software issues, and maintaining security compliance.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Field IT Support </h4>
-              <span class="meta">Altron Digital Business • 2019 – 2025</span>
-              <p>Providing remote and onsite support, managing Microsoft environments, troubleshooting hardware/software issues, and maintaining security compliance.</p>
-            </div>
-          </div>
-
-           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Support Technician</h4>
-              <span class="meta">Incredible Connection • 2018 – 2019</span>
-              <p>IT Support – Installation, configuration, maintenance of hardware and software. Running PC/laptop diagnostics and providing recommendations. </p>
-            </div>
-          </div>
-
-           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Onsite Support Technician</h4>
-              <span class="meta">Bytes Documents Solutions • 2017 – 2018<</span>
-              <p>Installation, configuration and maintenance of hardware and software. Maintenance of MFP’s, hardware and toner replacements.</p>
-            </div>
-          </div>
-
-<div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Tier 2 Support Technician</h4>
-              <span class="meta">Uber • 2017 – 2017<</span>
-              <p>Installation, configuration and maintenance of hardware and software. Installation of Workstations, power cabling, cameras and Lidars. .</p>
-            </div>
-          </div>
-
-<div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Tier 2 Support Technician</h4>
-              <span class="meta">Xerox XLP • 2014 – 2015<</span>
-              <p>Installation, configuration and maintenance of MFP hardware. Remote Support – Monitoring consumable levels and errors remotely. Configure SMTP settings.</p>
-            </div>
-          </div>
-          
-           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <h4>Onsite Support Technician</h4>
-              <span class="meta">Net1 Applied Technologies • 2012 – 2012</span>
-              <p>Staging – Preparing laptops for deployment, installing client-modified Windows OS. Assembly – Installing various hardware devices in metal carry cases. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Subsection: Certifications -->
-      <div class="subsection">
-        <h3>Certifications</h3>
-        <div class="grid grid-small">
-          <div class="card cert-card">
-            <div class="cert-icon">🎓</div>
-            <h4>ASP.Net MVC</h4>
-            <span class="meta">Web Applications</span>
-          </div>
-
-          <div class="card cert-card">
-            <div class="cert-icon">🔐</div>
-            <h4>MCSE</h4>
-            <span class="meta">System Administrator/Engineer</span>
-          </div>
-
-          <div class="card cert-card">
-            <div class="cert-icon">☁️</div>
-            <h4>N+ Advanced Skills</h4>
-            <span class="meta">Networking</span>
-          </div>
-
-          <div class="card cert-card">
-            <div class="cert-icon">💻</div>
-            <h4>CompTIA A+</h4>
-            <span class="meta">Hardware & Software</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Subsection: Skills -->
-      <div class="subsection">
-        <h3>Skills</h3>
-        <div class="skills-grid">
-          <div class="skill-tag">Microsoft 365</div>
-          <div class="skill-tag">Azure AD / Entra ID</div>
-          <div class="skill-tag">Visual Studio</div>
-          <div class="skill-tag">Windows Server</div>
-          <div class="skill-tag">Active Directory</div>
-          <div class="skill-tag">PowerShell</div>
-          <div class="skill-tag">ASP.Net MVC</div>
-          <div class="skill-tag">HTML / CSS / JS</div>
-          <div class="skill-tag">Remote Support</div>
-          <div class="skill-tag">Troubleshooting</div>
-          <div class="skill-tag">Security Basics</div>
-          <div class="skill-tag">Documentation</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== CV SECTION ===================== -->
-    <section id="cv" class="section">
-      <h2>Curriculum Vitae</h2>
-      <p class="section-intro">Download or preview my professional CV.</p>
-
-      <div class="cv-container">
-        <!-- CV Preview -->
-        <div class="cv-preview">
-          <iframe src="assets/Tebogo_Masokameng_CV.pdf" title="CV Preview"></iframe>
-        </div>
-
-        <!-- CV Actions -->
-        <div class="cv-actions">
-          <div class="card">
-            <h4>Get My CV</h4>
-            <p>View my full professional history, education, and contact details.</p>
-            <div class="card-links">
-              <a href="assets/Tebogo_Masokameng_CV.pdf" download class="btn btn-primary">
-                <span>📥</span> Download CV
-              </a>
-              <a href="assets/Tebogo_Masokameng_CV.pdf" target="_blank" class="btn btn-secondary">
-                <span>🔗</span> Open in New Tab
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="nav-cards">
+        <a href="Job Profile.html" class="card nav-card fade-in">
+          <span class="nav-card-icon">🧑‍💼</span>
+          <h4>Job Profile</h4>
+          <p>Work history, certifications, and professional skills.</p>
+        </a>
+        <a href="Projects.html" class="card nav-card fade-in">
+          <span class="nav-card-icon">🛠️</span>
+          <h4>Projects</h4>
+          <p>Dashboards, education sites, and business web projects.</p>
+        </a>
+        <a href="Curriculum Vitae.html" class="card nav-card fade-in">
+          <span class="nav-card-icon">📄</span>
+          <h4>Curriculum Vitae</h4>
+          <p>Download or preview my full professional CV.</p>
+        </a>
       </div>
     </section>
 
@@ -290,8 +106,7 @@
       <p>© 2026 Tebogo Masokameng</p>
       <div class="footer-links">
         <a href="mailto:tmasoks87@gmail.com">Email</a>
-        <a href="[linkedin.com](https://linkedin.com/in/yourprofile)" target="_blank">LinkedIn</a>
-        
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
